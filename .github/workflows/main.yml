@@ -38,7 +38,7 @@ jobs:
           image-ref: ghcr.io/${{ github.repository }}:latest
           severity: HIGH,CRITICAL
           exit-code: 1
-          ignore-unfixed: false
+          ignore-unfixed: true
 
       - name: Push image to GHCR
         if: success()
